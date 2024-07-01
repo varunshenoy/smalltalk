@@ -3,8 +3,10 @@
 Small Talk is a simple Chrome extension that uses a local instance of [Gemini Nano](https://deepmind.google/technologies/gemini/nano/) via the experimental [Prompt API](https://developer.chrome.com/docs/ai/built-in) in Chrome.
 
 It can:
-→ Summarize highlighted text (Cmd+Shift+S)
-→ Explain content as if you're 5 years old (Cmd+Shift+E)
+
+→ Summarize highlighted text (**Cmd+Shift+S**)
+
+→ Explain content as if you're 5 years old (**Cmd+Shift+E**)
 
 It can also read the generated summaries and explanations aloud using [Cartesia](https://cartesia.ai/)'s lightning fast Text-to-Speech model.
 
