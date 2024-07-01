@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Nano Text Actions",
+  "version": "1.1",
+  "description": "Summarize or ELI5 selected text with context menu or keyboard shortcuts",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "summarize": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Summarize selected text"
+    },
+    "eli5": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "ELI5 selected text"
+    }
+  }
+}
